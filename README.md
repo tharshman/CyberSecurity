@@ -59,7 +59,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jumpbox and ELK machine can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses:
 - 47.201.101.146
-This is the currently the only allowed machine into the Jumpbox and ELK stack. This is a remote system's public facing gateway inbound from the Internet
+This is currently the only allowed machine into the Jumpbox and ELK stack. This is a remote system's public facing gateway inbound from the Internet
 
 Machines within the network can only be accessed by SSH from within Ansible on the Jumpbox provisioner or the Jumpbox directly if SSH key from both systems is loaded into VM
 - the Jumpbox @ 10.0.1.4 or currently from outside 47.201.101.146
@@ -105,7 +105,7 @@ We have installed the following Beats on these machines:
 - Metricbeats
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat is used to collect log information using an agent on the designated host and recieves output. It then can be leveraged to asses situations, e.g, permissions and access issues or intrustive and bad actor behavior. Can also look at logs for trends on machines that dictate change and configuration changes.
+- Filebeat is used to collect log information using an agent on the designated host and recieves output. It then can be leveraged to asses situations, e.g, permissions and access issues or intrusive and bad actor behavior. Can also look at logs for trends on machines that dictate change and configuration changes.
 - Metricbeat is used to monitor machine performance and works on the OS of the machine. It can monitor cpu performance, memory performace, disk usage, etc. It can have thresholds set to signal events that may put the system at risk.
 
 ### Using the Playbook
