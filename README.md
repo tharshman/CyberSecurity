@@ -2,7 +2,7 @@
 Course material from Columbia University's School of Engineering CyberSecurity Course
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below. NOTE: I have included two files in the Diagrams folder. Due to some inconsistencies in the course outline the larger network would be required due to day 4 of week 12 activity 2 instructing to create additional machines, DVWA-VM3 and DVWA-VM4. They are in a separate region due to the limit of 4 cpu's in a region using Azure's student/home level free trial. The second file of the smaller network is the result of eliminating the day 4 week 12 mentioned work. However, it can still be constructed as shown and redundancy is now across nodes and regions and globally load balanced. Either region can fail and ELK will still be highly available. The additional add outside of this course would be to add a jumpbox to the other DVWA vm region in the event of a region failure or inaccessibility.
+The files in this repository were used to configure the network depicted below.
 
 https://github.com/tharshman/CyberSecurity/tree/main/Diagrams/AzureNetwork.png
 
